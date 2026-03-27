@@ -87,8 +87,9 @@ function App() {
           </div>
 
           <div className="hero-visual" aria-hidden="true">
-            <div className="video-background">
-              <img src="/hero_video.webp" alt="Background fluid animation" className="hero-video" />
+            <div className="video-background fluid-container">
+              <div className="orb orb1" />
+              <div className="orb orb2" />
               <div className="video-overlay" />
             </div>
             <div className="hero-grid" />

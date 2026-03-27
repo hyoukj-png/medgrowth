@@ -298,12 +298,50 @@ strong {
   box-shadow: 0 20px 40px rgba(5, 15, 36, 0.15);
 }
 
-.hero-video {
+.fluid-container {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  opacity: 0.85;
-  filter: saturate(1.1) brightness(0.9);
+  background: linear-gradient(120deg, #0a1f5c, #051022, #1742b8, #0a1f5c);
+  background-size: 300% 300%;
+  animation: gradient-flow 12s ease infinite;
+  opacity: 0.95;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: float 8s ease-in-out infinite alternate;
+}
+
+.orb1 {
+  width: 60%;
+  height: 60%;
+  background: rgba(23, 66, 184, 0.45);
+  top: -10%;
+  left: -10%;
+  animation-duration: 10s;
+}
+
+.orb2 {
+  width: 70%;
+  height: 70%;
+  background: rgba(5, 29, 92, 0.8);
+  bottom: -15%;
+  right: -10%;
+  animation-delay: -4s;
+  animation-duration: 12s;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(8%, 6%) scale(1.15); }
 }
 
 .video-overlay {
