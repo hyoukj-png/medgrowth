@@ -88,9 +88,7 @@ function App() {
 
           <div className="hero-visual" aria-hidden="true">
             <div className="video-background">
-              <video autoPlay loop muted playsInline className="hero-video">
-                <source src="https://cdn.pixabay.com/video/2020/05/25/40149-425114170_large.mp4" type="video/mp4" />
-              </video>
+              <img src="/hero_video.webp" alt="Background fluid animation" className="hero-video" />
               <div className="video-overlay" />
             </div>
             <div className="hero-grid" />
