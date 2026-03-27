@@ -203,6 +203,11 @@ main section,
   color: var(--accent-dark);
 }
 
+strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .hero h1,
 .section-heading h2,
 .contact-copy h2 {
@@ -210,6 +215,8 @@ main section,
   font-family: "Instrument Serif", serif;
   font-weight: 400;
   letter-spacing: -0.035em;
+  text-wrap: balance;
+  word-break: keep-all;
 }
 
 .hero h1 {
@@ -227,7 +234,10 @@ main section,
 .contact-copy p,
 .form-note {
   color: var(--muted);
-  line-height: 1.8;
+  line-height: 1.75;
+  letter-spacing: -0.015em;
+  word-break: keep-all;
+  text-align: left;
 }
 
 .hero-text {
@@ -279,15 +289,41 @@ main section,
   animation: float-in 950ms ease both;
 }
 
+.video-background {
+  position: absolute;
+  inset: 7% 0 7% 10%;
+  border-radius: 40px;
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: 0 20px 40px rgba(5, 15, 36, 0.15);
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  filter: saturate(1.1) brightness(0.9);
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10, 31, 92, 0.4) 0%, rgba(23, 66, 184, 0.15) 100%);
+  mix-blend-mode: hard-light;
+}
+
 .hero-grid {
   position: absolute;
   inset: 7% 0 7% 10%;
   border-radius: 40px;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.52) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.52) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
   background-size: 48px 48px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .visual-panel {
@@ -824,4 +860,10 @@ main section,
 .primary-button:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 22px 48px rgba(23, 66, 184, 0.28);
+}
+
+@media (min-width: 761px) {
+  .mobile-break {
+    display: none;
+  }
 }

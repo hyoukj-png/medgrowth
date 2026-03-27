@@ -65,8 +65,8 @@ function App() {
             <p className="eyebrow">MedGrowth Lab</p>
             <h1>Build a clinic that grows without ads.</h1>
             <p className="hero-text">
-              병원 브랜딩과 CRM 구조를 함께 설계해 광고를 줄여도 예약과 재방문이
-              남는 성장 시스템을 만듭니다.
+              병원 브랜딩과 <strong>CRM 구조</strong>를 함께 설계해<br />
+              광고를 줄여도 <strong>예약과 재방문</strong>이 남는<br className="mobile-break" /> 성장 시스템을 만듭니다.
             </p>
             <div className="hero-actions">
               <a className="primary-button" href="#contact">
@@ -87,6 +87,12 @@ function App() {
           </div>
 
           <div className="hero-visual" aria-hidden="true">
+            <div className="video-background">
+              <video autoPlay loop muted playsInline className="hero-video">
+                <source src="https://cdn.pixabay.com/video/2020/05/25/40149-425114170_large.mp4" type="video/mp4" />
+              </video>
+              <div className="video-overlay" />
+            </div>
             <div className="hero-grid" />
             <div className="visual-panel panel-primary">
               <p>Growth Architecture</p>
@@ -109,8 +115,8 @@ function App() {
 
         <section className="insight-band">
           <p>
-            광고를 더 집행하기 전에, 어떤 환자를 끌어오고 어떤 경험으로 다시 오게
-            만들지부터 설계해야 합니다.
+            광고를 더 집행하기 전에, <br className="mobile-break" />
+            <strong>어떤 환자를 끌어오고 어떤 경험으로 다시 오게 만들지부터</strong> 설계해야 합니다.
           </p>
         </section>
 
@@ -142,16 +148,16 @@ function App() {
         <section className="about-section" id="about">
           <div className="section-heading">
             <p className="eyebrow">About</p>
-            <h2>단기 광고가 아닌 지속 가능한 병원 성장 구조를 설계합니다.</h2>
+            <h2>단기 광고가 아닌 <strong>지속 가능한 병원 성장 구조</strong>를 설계합니다.</h2>
           </div>
           <div className="about-layout">
             <p>
-              MedGrowth Lab은 병원 브랜딩과 CRM 시스템을 결합해 원장님이 매출을
-              통제할 수 있는 구조를 만드는 컨설팅 브랜드입니다. 유입, 상담,
-              예약, 재방문까지 하나의 흐름으로 설계해 광고 의존도를 낮춥니다.
+              MedGrowth Lab은 병원 브랜딩과 CRM 시스템을 결합해 원장님이 <strong>매출을
+              통제할 수 있는 구조</strong>를 만드는 컨설팅 브랜드입니다. 유입, 상담,
+              예약, 재방문까지 하나의 흐름으로 설계해 <strong>광고 의존도</strong>를 낮춥니다.
             </p>
             <p>
-              핵심은 더 많은 캠페인이 아니라 더 나은 구조입니다. 병원이 어떤
+              핵심은 더 많은 캠페인이 아니라 <strong>더 나은 구조</strong>입니다. 병원이 어떤
               환자를 끌어오고, 어떤 경험으로 신뢰를 만들고, 어떻게 재방문으로
               이어지게 할지까지 함께 설계합니다.
             </p>
